@@ -1,0 +1,57 @@
+{
+	"applications": {
+		"gecko": {
+			"id": "{356ecbb5-8ec8-48b0-a835-8eb8288e3288}",
+			"strict_min_version": "52.0"
+		}
+	},
+	"author": "Iván Ruvalcaba",
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	},
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "img/highlighter.svg",
+		"default_popup": "static/popup.html",
+		"default_title": "Multi-Keywords Highlighter"
+	},
+	"content_scripts": [
+		{
+			"css": [
+				"css/content.css"
+			],
+			"js": [
+				"js/content.js"
+			],
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"run_at": "document_end"
+		}
+	],
+	"description": "Highlights given keywords on any web page you visit.",
+	"homepage_url": "https://github.com/ivanruvalcaba/multi-keywords-highlighter",
+	"icons": {
+		"16": "img/highlighter.svg",
+		"19": "img/highlighter.svg",
+		"24": "img/highlighter.svg",
+		"32": "img/highlighter.svg",
+		"38": "img/highlighter.svg",
+		"48": "img/highlighter.svg",
+		"64": "img/highlighter.svg",
+		"72": "img/highlighter.svg",
+		"96": "img/highlighter.svg",
+		"128": "img/highlighter.svg",
+		"256": "img/highlighter.svg"
+	},
+	"manifest_version": 2,
+	"name": "Multi-Keywords Highlighter",
+	"permissions": [
+		"tabs"
+	],
+	"short_name": "Multi-Keywords Highlighter",
+	"version": "1.0.0"
+}

@@ -1,0 +1,49 @@
+.highlighted {
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.highlighted.style-0 {
+  background: #4c7bd9;
+}
+
+.highlighted.style-1 {
+  background: #f9465d;
+}
+
+.highlighted.style-2 {
+  background: #7f3c46;
+}
+
+.highlighted.style-3 {
+  background: #f8c637;
+}
+
+.highlighted.style-4 {
+  background: #18aebc;
+}
+
+.highlighted.style-5 {
+  background: #9928df;
+}
+
+.highlighted.style-6 {
+  background: #fd40aa;
+}
+
+.highlighted.style-7 {
+  background: #02a0fe;
+}
+
+.highlighted.style-8 {
+  background: #5a6a6d;
+}
+
+.highlighted.style-9 {
+  background: #8bd23e;
+}
