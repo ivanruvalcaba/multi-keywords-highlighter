@@ -18,14 +18,17 @@ browser.runtime.onMessage.addListener(function(request, sender) {
       function(tabs) {
         if ('undefined' !== typeof tabs[0].id && tabs[0].id) {
           let showOccurrences = localStorage.getItem('showOccurrences');
-
           showOccurrences = 'true' === showOccurrences || null === showOccurrences;
+		  
+		  let ligterHighlighting = localStorage.getItem('ligterHighlighting');
+		  ligterHighlighting = 'true' === ligterHighlighting || null === ligterHighlighting;
 
           browser.tabs.sendMessage(tabs[0].id, {
             'message': 'returnOptions',
             'remove': request.remove,
             'keywords': localStorage.getItem('keywords'),
-            'showOccurrences': showOccurrences
+            'showOccurrences': showOccurrences,
+            'ligterHighlighting': ligterHighlighting
           });
         }
       });

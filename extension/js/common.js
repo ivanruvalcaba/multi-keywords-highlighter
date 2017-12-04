@@ -14,6 +14,10 @@ function loadOptions() {  // eslint-disable-line no-unused-vars
     let showOccurrences = localStorage.getItem('showOccurrences');
     showOccurrences = 'true' === showOccurrences || null === showOccurrences;
     document.getElementById('checkboxShowOccurrences').checked = showOccurrences;
+
+    let ligterHighlighting = localStorage.getItem('ligterHighlighting');
+    ligterHighlighting = 'true' === ligterHighlighting || null === ligterHighlighting;
+    document.getElementById('checkboxLighterHighlighting').checked = ligterHighlighting;
   }
 }
 
@@ -21,5 +25,6 @@ function saveOptions() {  // eslint-disable-line no-unused-vars
   if ('undefined' !== typeof localStorage) {
     localStorage.setItem('keywords', document.getElementById('textareaKeywords').value);
     localStorage.setItem('showOccurrences', document.getElementById('checkboxShowOccurrences').checked);
+    localStorage.setItem('ligterHighlighting', document.getElementById('checkboxLighterHighlighting').checked);
   }
 }
