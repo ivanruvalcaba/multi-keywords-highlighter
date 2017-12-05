@@ -17,7 +17,7 @@ function keywordsHighlighter(options, remove) {
   function highlight(node, pos, keyword, options, style) {
     let span = document.createElement('span');
 
-    span.className = 'highlighted' + ' ' + (options.subtleHighlighting ? 'subtle ' : 'notsubtle ') + 'style-' + style;
+    span.className = 'highlighted' + ' ' + (options.subtleHighlighting ? 'subtle ' : '') + 'style-' + style;
     span.style.color = options.foreground;
     span.style.backgroundColor = options.background;
 

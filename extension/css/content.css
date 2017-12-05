@@ -9,7 +9,9 @@
 }
 
 .highlighted.subtle {
-  color: black;
+  font-weight: normal;
+  box-shadow: none;
+  padding: 1px;
 }
 
 .highlighted.style-0 {
