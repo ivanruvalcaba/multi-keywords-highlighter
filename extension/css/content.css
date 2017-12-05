@@ -8,6 +8,10 @@
   text-decoration: none;
 }
 
+.highlighted.subtle {
+  color: black;
+}
+
 .highlighted.style-0 {
   background: #4c7bd9;
 }

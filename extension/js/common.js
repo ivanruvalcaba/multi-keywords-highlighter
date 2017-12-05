@@ -15,9 +15,9 @@ function loadOptions() {  // eslint-disable-line no-unused-vars
     showOccurrences = 'true' === showOccurrences || null === showOccurrences;
     document.getElementById('checkboxShowOccurrences').checked = showOccurrences;
 
-    let ligterHighlighting = localStorage.getItem('ligterHighlighting');
-    ligterHighlighting = 'true' === ligterHighlighting || null === ligterHighlighting;
-    document.getElementById('checkboxLighterHighlighting').checked = ligterHighlighting;
+    let subtleHighlighting = localStorage.getItem('subtleHighlighting');
+    subtleHighlighting = 'true' === subtleHighlighting && null !== subtleHighlighting;
+    document.getElementById('checkboxSubtleHighlighting').checked = subtleHighlighting;
   }
 }
 
@@ -25,6 +25,6 @@ function saveOptions() {  // eslint-disable-line no-unused-vars
   if ('undefined' !== typeof localStorage) {
     localStorage.setItem('keywords', document.getElementById('textareaKeywords').value);
     localStorage.setItem('showOccurrences', document.getElementById('checkboxShowOccurrences').checked);
-    localStorage.setItem('ligterHighlighting', document.getElementById('checkboxLighterHighlighting').checked);
+    localStorage.setItem('subtleHighlighting', document.getElementById('checkboxSubtleHighlighting').checked);
   }
 }
