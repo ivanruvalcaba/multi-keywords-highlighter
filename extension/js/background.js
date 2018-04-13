@@ -8,7 +8,7 @@
  */
 
 browser.runtime.onMessage.addListener(function(request, sender) {
-  // This message is recibed from 'content.js' and 'popup.js'.
+  // This message is recived from 'content.js' and 'popup.js'.
   if ('getOptions' === request.message) {
     if ('undefined' !== typeof localStorage) {
       browser.tabs.query({
@@ -18,20 +18,23 @@ browser.runtime.onMessage.addListener(function(request, sender) {
       function(tabs) {
         if ('undefined' !== typeof tabs[0].id && tabs[0].id) {
           let showOccurrences = localStorage.getItem('showOccurrences');
-
           showOccurrences = 'true' === showOccurrences || null === showOccurrences;
+
+		  let subtleHighlighting = localStorage.getItem('subtleHighlighting');
+		  subtleHighlighting = 'true' === subtleHighlighting;
 
           browser.tabs.sendMessage(tabs[0].id, {
             'message': 'returnOptions',
             'remove': request.remove,
             'keywords': localStorage.getItem('keywords'),
-            'showOccurrences': showOccurrences
+            'showOccurrences': showOccurrences,
+            'subtleHighlighting': subtleHighlighting
           });
         }
       });
     }
   }
-  // This message is recibed from 'content.js'.
+  // This message is recived from 'content.js'.
   if ('showOccurrences' === request.message) {
     let showOccurrences = localStorage.getItem('showOccurrences');
 

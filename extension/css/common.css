@@ -6,3 +6,8 @@ body {
 h2 {
   text-decoration: underline;
 }
+
+.checkbox-list {
+	margin-left: 0px;
+	list-style: none;
+}

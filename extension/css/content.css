@@ -8,6 +8,12 @@
   text-decoration: none;
 }
 
+.highlighted.subtle {
+  font-weight: normal;
+  box-shadow: none;
+  padding: 1px;
+}
+
 .highlighted.style-0 {
   background: #4c7bd9;
 }
