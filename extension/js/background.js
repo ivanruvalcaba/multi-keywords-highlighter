@@ -20,8 +20,8 @@ browser.runtime.onMessage.addListener(function(request, sender) {
           let showOccurrences = localStorage.getItem('showOccurrences');
           showOccurrences = 'true' === showOccurrences || null === showOccurrences;
 
-		  let subtleHighlighting = localStorage.getItem('subtleHighlighting');
-		  subtleHighlighting = 'true' === subtleHighlighting;
+          let subtleHighlighting = localStorage.getItem('subtleHighlighting');
+          subtleHighlighting = 'true' === subtleHighlighting;
 
           browser.tabs.sendMessage(tabs[0].id, {
             'message': 'returnOptions',

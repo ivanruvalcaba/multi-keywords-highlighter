@@ -86,7 +86,7 @@ browser.runtime.onMessage.addListener(function(request) {
     if ('undefined' != typeof request.keywords && request.keywords) {
       keywordsHighlighter({
         'keywords': request.keywords,
-		'subtleHighlighting' : request.subtleHighlighting
+        'subtleHighlighting': request.subtleHighlighting
       },
       request.remove
       );
