@@ -2,6 +2,8 @@
 
 Highlights given keywords on any web page you visit.
 
+> This project has been migrated to **GitLab**: [https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter](https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter) _(#GithubExodus)_.
+
 ## Features
 
 *Multi-Keywords Highlighter* is a browser extension for **Firefox** (*version 52.0 or higher*). It's intended to be assistive for searching for the interesting bits of a web page by defining a keyword list.
