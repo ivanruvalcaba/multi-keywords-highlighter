@@ -1,8 +1,8 @@
+> This project has been migrated to **GitLab**: [https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter](https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter) _(#GithubExodus)_.
+
 # Multi-Keywords Highlighter
 
 Highlights given keywords on any web page you visit.
-
-> This project has been migrated to **GitLab**: [https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter](https://gitlab.com/ivanruvalcaba/multi-keywords-highlighter) _(#GithubExodus)_.
 
 ## Features
 
